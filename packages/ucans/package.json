@@ -1,6 +1,6 @@
 {
   "name": "@ucans/ucans",
-  "version": "0.11.0",
+  "version": "0.11.2",
   "description": "Typescript implementation of UCANs with default plugins",
   "author": "Daniel Holmgren <daniel@fission.codes>",
   "repository": {
@@ -65,8 +65,8 @@
     "README.md"
   ],
   "dependencies": {
-    "@ucans/core": "*",
-    "@ucans/default-plugins": "*"
+    "@ucans/core": "0.11.2",
+    "@ucans/default-plugins": "0.11.2"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",

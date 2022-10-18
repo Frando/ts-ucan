@@ -1,6 +1,6 @@
 {
   "name": "@ucans/default-plugins",
-  "version": "0.11.0",
+  "version": "0.11.2",
   "description": "Default UCAN plugin set",
   "author": "Daniel Holmgren <daniel@fission.codes>",
   "repository": {
@@ -66,7 +66,7 @@
   ],
   "dependencies": {
     "@stablelib/ed25519": "^1.0.2",
-    "@ucans/core": "*",
+    "@ucans/core": "0.11.2",
     "big-integer": "^1.6.51",
     "one-webcrypto": "^1.0.3",
     "uint8arrays": "3.0.0"
