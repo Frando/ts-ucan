@@ -1,0 +1,14 @@
+import { AvailableCryptoKeyPair, PrivateKeyJwk } from "../types.js";
+export declare const ALG = "ECDSA";
+export declare const DEFAULT_CURVE = "P-256";
+export declare const DEFAULT_HASH_ALG = "SHA-256";
+export declare const generateKeypair: () => Promise<AvailableCryptoKeyPair>;
+export declare const importKeypairJwk: (privKeyJwk: PrivateKeyJwk, exportable?: boolean) => Promise<AvailableCryptoKeyPair>;
+export declare const exportKey: (key: CryptoKey) => Promise<Uint8Array>;
+export declare const importKey: (key: Uint8Array) => Promise<CryptoKey>;
+export declare const sign: (msg: Uint8Array, privateKey: CryptoKey) => Promise<Uint8Array>;
+export declare const verify: (pubKey: Uint8Array, msg: Uint8Array, sig: Uint8Array) => Promise<boolean>;
+export declare const didToPublicKey: (did: string) => Uint8Array;
+export declare const publicKeyToDid: (publicKey: Uint8Array) => string;
+export declare const compressP256Pubkey: (pubkeyBytes: Uint8Array) => Uint8Array;
+export declare const decompressP256Pubkey: (compressed: Uint8Array) => Uint8Array;
